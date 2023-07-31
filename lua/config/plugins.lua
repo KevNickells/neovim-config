@@ -5,17 +5,24 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", 
+    "--branch=stable",
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "HerringtonDarkholme/yats.vim" },
   { "MaxMEllon/vim-jsx-pretty" },
   { "neoclide/coc.nvim" },
-  { "nvim-lualine/lualine.nvim" }
+  { "nvim-lualine/lualine.nvim" },
+  { "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("fzf-lua").setup({})
+    end
+  }
 })
 
 
