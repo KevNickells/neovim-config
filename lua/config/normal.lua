@@ -2,6 +2,7 @@ vim.cmd 'nnoremap <leader>z :Lexplore<cr>'                  -- why not just the 
 vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- why such an opaque command for the file explorer?
 vim.cmd 'nnoremap ff :FzfLua files<cr>'                     -- Lua-based fuzzy file finder
 vim.cmd 'nnoremap fb :FzfLua buffers<cr>'                   -- Lua-based fuzzy buffer search
+vim.cmd 'nnoremap ss :SplitTerminal<cr>'                    -- In-window terminal
 vim.cmd 'nnoremap ddd dG'                                   -- delete to end
 vim.cmd 'nnoremap qqq :q!<cr>'                              -- quick exit
 vim.cmd 'nnoremap dc :DeleteCharacterUnderCursor<cr>'       -- delete this character in file
@@ -21,8 +22,8 @@ vim.cmd 'nnoremap <silent> <Esc><Esc> :OnSaveCommands<cr>'  -- escape escape = s
 vim.cmd 'nnoremap <C-o> <C-o>zz'                            -- centre in page
 vim.cmd 'nnoremap <C-i> <C-i>zz'                            -- centre in page
 vim.cmd 'nnoremap B 0'                                      -- beginning of line
-vim.cmd 'nnoremap fr :cFindAndReplace()<cr>'                -- nicer find and replace
-vim.cmd 'nnoremap frr :ReplaceThisWord()<cr>'               -- nicer replace this word
+vim.cmd 'nnoremap fr :FindAndReplace<cr>'                   -- nicer find and replace
+vim.cmd 'nnoremap frr :ReplaceThisWord<cr>'                 -- nicer replace this word
 vim.cmd 'nnoremap <leader>cp :CopyAndDisplayFilePath<cr>'   -- show full path & copy to clipboard
 vim.cmd 'nnoremap <leader>cf :CopyAndDisplayFileOnly<cr>'   -- show full path & copy to clipboard
 vim.cmd 'nnoremap ee :edit<space>'                          -- new file shorthand
@@ -31,7 +32,7 @@ vim.cmd 'nnoremap ;; :pwd<cr>'                              -- current location 
 vim.cmd 'nnoremap H Hzz'                                    -- centre screen when scrolling
 vim.cmd 'nnoremap L Lzz'                                    -- centre screen when scrolling
 vim.cmd 'nnoremap <leader>ca ggvG$y<esc>2<C-o><Enter>'      -- copy whole file to clipboard
-vim.cmd 'nnoremap <C-w> <C-w>='                             -- resize windows to the same
+vim.cmd 'nnoremap == <C-w>='                                -- resize windows to the same
 vim.cmd 'nnoremap cd :cd<space>'                            -- change directory quicker
 vim.cmd 'nnoremap yw yW'                                    -- yank whole word
 vim.cmd 'nnoremap G G$'                                     -- go to the end of file, not first char of end

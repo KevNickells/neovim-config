@@ -11,6 +11,16 @@ vim.api.nvim_create_user_command(
 )
 
 vim.api.nvim_create_user_command(
+  'SplitTerminal',
+  [[
+    exec '15 split'
+    exec ':term'
+    exec 'normal A'
+  ]],
+  {}
+)
+
+vim.api.nvim_create_user_command(
   'FindAndReplace',
   [[
     let find = input('Find: ')
@@ -98,34 +108,3 @@ vim.api.nvim_create_user_command(
   ]],
   {}
 )
-
---[[
---
-May be needed
-" Search in open buffers
-function! s:line_handler(l)
-  let keys = split(a:l, ':\t')
-  exec 'buf' keys[0]
-  exec keys[1]
-  normal! ^zz
-endfunction
-
-function! s:buffer_lines()
-  let res = []
-  for b in filter(range(1, bufnr('$')), 'buflisted(v:val)')
-    call extend(res, map(getbufline(b,0,"$"), 'b . ":\t" . (v:key + 1) . ":\t" . v:val '))
-  endfor
-  return res
-endfunction
---]]
-
---[[
-example
-vim.api.nvim_create_user_command(
-  'Steely',
-  \[\[ let xx  = 'some shit here'
-  echo 'balls' \]\],
-  {} -- param name and value here; see https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
-)
---]]
-
