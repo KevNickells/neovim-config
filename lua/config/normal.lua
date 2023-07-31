@@ -1,3 +1,4 @@
+vim.cmd 'nnoremap <leader>z :Lexplore<cr>'                  -- why not just the basic file explorer?
 vim.cmd 'nnoremap ddd dG'                                   -- delete to end
 vim.cmd 'nnoremap qqq :q!<cr>'                              -- quick exit
 vim.cmd 'nnoremap dc :DeleteCharacterUnderCursor<cr>'       -- delete this character in file

@@ -1,9 +1,10 @@
-local set = vim.opt 
+local set = vim.opt
 
+vim.g.netrw_winsize = 25
 -- :colorscheme <tab> gives a list of installed schemes
 
 -- General colorscheme
-vim.cmd 'colorscheme slate' 
+vim.cmd 'colorscheme slate'
 
 -- that line at the bottom; see https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
 require('lualine').setup {
@@ -16,8 +17,8 @@ set.number = relativenumber
 
 --[[
 Status line would like
-LEFT > Mode / git stuff / filename / write status             
-Righ < time? Snippet of current buffer? write status colour? 
+LEFT > Mode / git stuff / filename / write status
+Righ < time? Snippet of current buffer? write status colour?
 
 --]]
 
