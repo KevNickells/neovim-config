@@ -1,7 +1,7 @@
-vim.api.nvim_create_autocmd(
+--[[vim.api.nvim_create_autocmd(
   { "FileType" },
   { pattern = { "typescript" }, command = "setlocal formatprg=prettier --parse typescript" }
-)
+) --]]
 
 vim.api.nvim_create_autocmd(
   { "BufReadPost" },

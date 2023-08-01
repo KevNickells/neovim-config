@@ -15,8 +15,8 @@ vim.cmd 'nnoremap mm :bdelete<cr>'                          -- remove current fi
 vim.cmd 'nnoremap mmm :bufdo bd<cr>'                        -- Remove all files from buffer
 vim.cmd 'nnoremap <C-h> <C-w>h'                             -- buffer left
 vim.cmd 'nnoremap <C-l> <C-w>l'                             -- buffer right
-vim.cmd 'nnoremap <C-j> :bprevious<cr>'                     -- buffer up
-vim.cmd 'nnoremap <C-k> :bnext<cr>'                         -- buffer down
+vim.cmd 'nnoremap <silent> <C-j> :bprevious<cr>'                -- buffer up
+vim.cmd 'nnoremap <silent> <C-k> :bnext<cr>'                    -- buffer down
 vim.cmd 'nnoremap vv :vsplit<cr><C-w>l'                     -- open new window
 vim.cmd 'nnoremap <silent> <Esc><Esc> :OnSaveCommands<cr>'  -- escape escape = save
 vim.cmd 'nnoremap <C-o> <C-o>zz'                            -- centre in page
