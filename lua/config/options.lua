@@ -37,7 +37,7 @@ set.fileformats = unix
 set.mouse = n
 set.textwidth = 80
 set.clipboard=unnamedplus
-set.smartcase = true
+set.ignorecase = true
 
 -- non self-explanatory settings
 set.re = 0              -- something for a syntax plugin

@@ -1,7 +1,9 @@
 vim.cmd 'nnoremap <leader>z :Lexplore<cr>'                  -- why not just the basic file explorer?
 vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- why such an opaque command for the file explorer?
-vim.cmd 'nnoremap ff :FzfLua files<cr>'                     -- Lua-based fuzzy file finder
-vim.cmd 'nnoremap fb :FzfLua buffers<cr>'                   -- Lua-based fuzzy buffer search
+vim.cmd 'nnoremap ff :FzfLua files<cr>'                     -- fuzzy file finder
+vim.cmd 'nnoremap ffb :FzfLua buffers<cr>'                   -- fuzzy file search open buffers
+vim.cmd 'nnoremap fw :FzfLua grep<cr>'                      -- grep word in project
+vim.cmd 'nnoremap fb :FzfLua blines<cr>'                    -- search for word in buffers
 vim.cmd 'nnoremap ss :SplitTerminal<cr>'                    -- In-window terminal
 vim.cmd 'nnoremap ddd dG'                                   -- delete to end
 vim.cmd 'nnoremap qqq :q!<cr>'                              -- quick exit
