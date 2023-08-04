@@ -1,0 +1,4 @@
+method(param) {
+    return something
+}
+
