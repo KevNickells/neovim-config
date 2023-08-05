@@ -26,7 +26,7 @@ vim.cmd 'colorscheme slate'
 vim.keymap.set({mode}, {lhs}, {rhs}, {options})
 vim.keymap.set('n', 'bls', ':echo "balls"<cr>')
   -- {options} is like this {noremap = false} but defaults to noremap = true
- 
+
 Function things...
 function map(mode, lhs, rhs, opts)
     local options = { noremap = true }

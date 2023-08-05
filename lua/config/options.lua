@@ -7,14 +7,6 @@ vim.g.python3_host_prog = '/usr/bin/python3'
 TODO
 
 Snippets
-source ~/.vim_my_settings/.autocommands ✓
-  --> needs snippets to be set but may not be necessary?
-source ~/.vim_my_settings/.spellings ✓
-source ~/.vim_my_settings/.plugins ✓
-source ~/.vim_my_settings/.settings ✓
-source ~/.vim_my_settings/.functions-and-commands ✓
-  --> Some missing that may be sorted with fzf / ripgrep
-source ~/.vim_my_settings/.normal-mode-remaps ✓
 source ~/.vim_my_settings/.visual-mode-remaps
 source ~/.vim_my_settings/.insert-mode-remaps
 

@@ -13,6 +13,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "junegunn/fzf", build = "./install --bin" },
   { "HerringtonDarkholme/yats.vim" },
   { "MaxMEllon/vim-jsx-pretty" },
   { "neoclide/coc.nvim" },
