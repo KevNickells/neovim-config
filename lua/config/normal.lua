@@ -1,10 +1,10 @@
-vim.cmd 'nnoremap <leader>z :Lexplore<cr>'                  -- why not just the basic file explorer?
-vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- why such an opaque command for the file explorer?
+vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- Basic file explorer because I don't need fancy
 vim.cmd 'nnoremap ff :FzfLua files<cr>'                     -- fuzzy file finder
-vim.cmd 'nnoremap ffb :FzfLua buffers<cr>'                   -- fuzzy file search open buffers
+vim.cmd 'nnoremap fff :FzfLua buffers<cr>'                  -- fuzzy file search open buffers
 vim.cmd 'nnoremap fw :FzfLua grep<cr>'                      -- grep word in project
 vim.cmd 'nnoremap fb :FzfLua blines<cr>'                    -- search for word in buffers
 vim.cmd 'nnoremap ss :SplitTerminal<cr>'                    -- In-window terminal
+vim.cmd 'nnoremap == <C-w>='                                -- windows equal size
 vim.cmd 'nnoremap ddd dG'                                   -- delete to end
 vim.cmd 'nnoremap qqq :q!<cr>'                              -- quick exit
 vim.cmd 'nnoremap dc :DeleteCharacterUnderCursor<cr>'       -- delete this character in file
@@ -64,31 +64,7 @@ vim.cmd 'nnoremap <leader>{{ l0i{<esc>A}<esc>'
 
 
 --[[
-
 TODO config dropdown
 " bring up the config dropdown
 nnoremap <C-a> i<C-a>
-
-" TODO will be superced by FZF
-"nnoremap ff :FZF<CR>
-
-" text search in open buffers; defined in .vim-functions-and-commands [probably]
-"nnoremap <Leader>b FZFLines<cr>
-
-"remap fzf to tt
-"nnoremap tt :Find<Space>
-
-" Search for current word in whole project
-"nnoremap ttt EvBy:<c-f>iFind<Space><esc>p<c-c><Enter>
-
-TODO will be superceded by prettier (?)
-" highlights all and aligns the 2<C-o> is taking you back two positions, FYI
-"nnoremap == ggvG==<esc>2<C-o>
-
-TODO what's the deal with shells?
-" open a nushell in-window
-nnoremap ns : term nu<cr>
-
-" open shell
-nnoremap ss :term <cr>
 --]]
