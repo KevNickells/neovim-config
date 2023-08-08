@@ -43,7 +43,7 @@ vim.cmd 'inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "<
 
 -- In-window terminal
 vim.cmd 'inoremap >> -->'
-vim.cmd 'inoremap << <--'
+vim.cmd 'inoremap << <!--'
 
 -- move between buffers with ctrl+l/ h
 vim.cmd 'inoremap <C-h> <esc><C-w>h'

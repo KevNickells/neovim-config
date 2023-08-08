@@ -9,6 +9,9 @@ vim.cmd 'nnoremap <leader>t :r<space>~/.config/nvim/ftplugin/snippets/testJavasc
 vim.cmd 'nnoremap <leader>tt :r<space>~/.config/nvim/ftplugin/snippets/shortTestJavascript.js<cr>'
 vim.cmd 'nnoremap <leader>re :r<space>~/.config/nvim/ftplugin/snippets/reducerJavaScript.js<cr>'
 
+-- comment line
+-- vim.cmd 'inoremap <leader>cc I//<esc>'
+
 -- debugger
 vim.cmd 'nnoremap db Odebugger;<esc>'
 vim.cmd 'inoremap db debugger;<space><esc>'
