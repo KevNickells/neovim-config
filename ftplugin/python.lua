@@ -1,3 +1,5 @@
+vim.opt.shiftwidth = 2
+
 --[[
 nnoremap <leader>c :r<space>~/Snippets/classPython.py<cr>
 nnoremap <leader>t :r<space>~/Snippets/testPython.py<cr>
