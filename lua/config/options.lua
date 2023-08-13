@@ -28,7 +28,7 @@ set.swapfile = false
 set.fileformats = unix
 set.mouse = n
 set.textwidth = 80
-set.clipboard=unnamedplus
+set.clipboard= "unnamedplus"
 set.ignorecase = true
 
 -- non self-explanatory settings
