@@ -8,6 +8,7 @@ vim.cmd 'nnoremap == <C-w>='                                -- windows equal siz
 vim.cmd 'nnoremap ddd dG'                                   -- delete to end
 vim.cmd 'nnoremap qqq :q!<cr>'                              -- quick exit
 vim.cmd 'nnoremap dc :DeleteCharacterUnderCursor<cr>'       -- delete this character in file
+vim.cmd 'nnoremap df dt'                                    -- delete to... non-inclusive (df is more ergonomic or whatever)
 vim.cmd 'nnoremap <C-u> :ToggleCasing<cr>'                  -- uppercase this word
 vim.cmd 'nnoremap <Space> :set hlsearch! hlsearch?<CR>'     -- space highlights search
 vim.cmd 'nnoremap n nzz'                                    -- centre screen when moving
