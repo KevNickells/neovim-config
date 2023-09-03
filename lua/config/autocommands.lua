@@ -4,6 +4,11 @@
 ) --]]
 
 vim.api.nvim_create_autocmd(
+  { "FileType" },
+  { pattern = {"python" }, command = "set tabstop=2 shiftwidth=2" }
+)
+
+vim.api.nvim_create_autocmd(
   { "BufReadPost" },
   { pattern = { "*" }, command = [[
     if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -22,8 +27,6 @@ vim.api.nvim_create_autocmd(
 --[[
 
 needs snippets... but also they should be js already?
-autocmd BufWritePre,BufNewFile,BufRead ~/.vim/Snippets/*Javascript set syntax=javascript
-autocmd BufWritePre,BufNewFile,BufRead ~/.vim/Snippets/*Javascript set filetype=javascript
 
 There might be a better way than these
 autocmd BufWritePre,BufNewFile,BufRead *.json :%!python -m json.tool
