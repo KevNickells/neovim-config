@@ -1,4 +1,6 @@
 vim.cmd 'iab aboslute absolute'
+vim.cmd 'iab agnet agent'
+vim.cmd 'iab agnets agents'
 vim.cmd 'iab amned amend'
 vim.cmd 'iab applicaiton application'
 vim.cmd 'iab assocaition association'
