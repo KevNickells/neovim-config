@@ -24,9 +24,13 @@ vim.api.nvim_create_autocmd(
   { "BufWinEnter" },
   { pattern = { "*" }, command = "silent! loadview" }
 )
---[[
 
-needs snippets... but also they should be js already?
+vim.api.nvim_create_autocmd(
+  { "BufWritePost" },
+  { pattern = { "*.json" }, command = "CocCommand formatJson --preset-json --indent=2 " }
+)
+
+--[[
 
 There might be a better way than these
 autocmd BufWritePre,BufNewFile,BufRead *.json :%!python -m json.tool
