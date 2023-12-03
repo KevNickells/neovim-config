@@ -30,10 +30,14 @@ vim.api.nvim_create_autocmd(
   { pattern = { "*.json" }, command = "CocCommand formatJson --preset-json --indent=2 " }
 )
 
+
+vim.api.nvim_create_autocmd(
+  { "BufWritePre" },
+  { pattern = { "*" }, command = "lua vim.lsp.buf.format()" }
+)
 --[[
 
 There might be a better way than these
-autocmd BufWritePre,BufNewFile,BufRead *.json :%!python -m json.tool
 autocmd BufWritePost *.py compiler flake8 | make | cwindow
   --]]
 

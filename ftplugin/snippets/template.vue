@@ -1,19 +1,11 @@
-<script>
-  // JS here
+<script lang="ts">
 export default {
-  data() {
-    // return { }
-  },
-  methods: {
-    //hideNotification() { }
-  }
+  // data() { }, mounted() { }, created() { }, watch() { }, methods: { }, computed: { }
 }
 </script>
 
 <template>
-<!-- HTML here -->
 </template>
 
 <style>
-/* css here */
 </style>

@@ -18,6 +18,7 @@ require("lazy").setup({
   { "MaxMEllon/vim-jsx-pretty" },
   { "neoclide/coc.nvim" },
   { "nvim-lualine/lualine.nvim" },
+  { "rust-lang/rust.vim" },
   { "ibhagwan/fzf-lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
