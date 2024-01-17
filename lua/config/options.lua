@@ -30,6 +30,7 @@ set.mouse = n
 set.textwidth = 80
 set.clipboard= "unnamedplus"
 set.ignorecase = true
+set.autochdir = true
 
 -- non self-explanatory settings
 set.re = 0              -- something for a syntax plugin
