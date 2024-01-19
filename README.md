@@ -4,10 +4,14 @@
 - Filetype-specific things are in /ftplugin
 
 # Manual bits:
+
 - needs xclip: `sudo pacman -S xclip`
 - needs pynvim: `sudo pacman -S python-pynvim`
 - needs coc to be compiled: `cd ~/.local/share/nvim/lazy/coc.nvim && npm install` (takes a while)
 - run `:checkhealth` after install
+- nix installs rust-analyzer somewhere unexpected; after running `:CocInstall
+  coc-rust-analyzer`, need to run `which rust-analyzer` and copy the binary from
+  wherever it is to `~/.config/bin/rust-analyzer`
 
 # What
 
