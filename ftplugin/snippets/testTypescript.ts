@@ -1,20 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HERE } from './HERE';
+import { } from ''; // component under test
 
-describe('HERE', () => {
-  let component: HERE;
-  let fixture: ComponentFixture<HERE>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HERE ]
-    })
-    .compileComponents();
-  }));
+describe('', () => { // component test suite name
+  let component: ; // component
+  let fixture: ComponentFixture<>; // <component>
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HERE);
+    TestBed.configureTestingModule({
+      declarations: [] // [component]
+    });
+    fixture = TestBed.createComponent(); // (component)
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -23,3 +19,4 @@ describe('HERE', () => {
     expect(component).toBeTruthy();
   });
 });
+
