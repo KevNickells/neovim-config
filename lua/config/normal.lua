@@ -1,5 +1,8 @@
 vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- Basic file explorer because I don't need fancy
 vim.cmd 'nnoremap ff :vnew <Bar> :FzfLua files<cr>'         -- open file finder in new window
+
+vim.cmd 'nnoremap <C-]> :vnew %<CR>g<C-]>1<CR><CR>'         -- open tag definition in new tab - may need work
+
 vim.cmd 'nnoremap fff :FzfLua buffers<cr>'                  -- fuzzy file search open buffers
 vim.cmd 'nnoremap fw :FzfLua grep<cr>'                      -- grep word in project
 vim.cmd 'nnoremap fb :FzfLua blines<cr>'                    -- search for word in buffers
@@ -18,8 +21,8 @@ vim.cmd 'nnoremap mm :bdelete<cr>'                          -- remove current fi
 vim.cmd 'nnoremap mmm :bufdo bd<cr>'                        -- Remove all files from buffer
 vim.cmd 'nnoremap <C-h> <C-w>h'                             -- buffer left
 vim.cmd 'nnoremap <C-l> <C-w>l'                             -- buffer right
-vim.cmd 'nnoremap <silent> <C-j> :bprevious<cr>'                -- buffer up
-vim.cmd 'nnoremap <silent> <C-k> :bnext<cr>'                    -- buffer down
+vim.cmd 'nnoremap <silent> <C-j> :bprevious<cr>'            -- buffer up
+vim.cmd 'nnoremap <silent> <C-k> :bnext<cr>'                -- buffer down
 vim.cmd 'nnoremap vv :vsplit<cr><C-w>l'                     -- open new window
 vim.cmd 'nnoremap <silent> <Esc><Esc> :OnSaveCommands<cr>'  -- escape escape = save
 vim.cmd 'nnoremap <C-o> <C-o>zz'                            -- centre in page
