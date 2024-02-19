@@ -28,6 +28,7 @@ require("lazy").setup({
   -- { "ludovicchabant/vim-gutentags" },
   -- { "jsfaint/gen_tags.vim" },
   -- { "mfulz/cscope.nvim" },
+  { "mechatroner/rainbow_csv" },
   { "ibhagwan/fzf-lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()

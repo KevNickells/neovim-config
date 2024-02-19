@@ -43,6 +43,9 @@ vim.cmd 'nnoremap cd :cd<space>'                            -- change directory 
 vim.cmd 'nnoremap yw yW'                                    -- yank whole word
 vim.cmd 'nnoremap G G$'                                     -- go to the end of file, not first char of end
 vim.cmd 'nnoremap 000 :ToggleTextWidth<cr>'                 -- toggle 80 char limit
+vim.cmd 'nnoremap 000 :ToggleTextWidth<cr>'                 -- toggle 80 char limit
+vim.cmd 'nnoremap ns :enew<cr>:setlocal buftype=nofile<cr>:file scratch<cr>' -- scratch file
+
 
 -- surround word
 vim.cmd 'nnoremap <leader>" lbi"<esc>ea"<esc>'
