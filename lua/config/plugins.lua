@@ -24,6 +24,7 @@ require("lazy").setup({
   { "jose-elias-alvarez/null-ls.nvim" },
   { "MunifTanjim/eslint.nvim" },
   { "MunifTanjim/prettier.nvim" },
+  { "whiteinge/diffconflicts" },
   { "joeveiga/ng.nvim" },
   -- { "ludovicchabant/vim-gutentags" },
   -- { "jsfaint/gen_tags.vim" },
