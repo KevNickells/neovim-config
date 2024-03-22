@@ -7,6 +7,7 @@ vim.api.nvim_create_user_command(
     write
     silent exec "'m"
   ]],
+
   {}
 )
 

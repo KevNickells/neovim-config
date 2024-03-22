@@ -3,24 +3,6 @@ local set = vim.opt
 vim.g.yats_host_keyword = 1
 vim.g.python3_host_prog = '/usr/bin/python3'
 
-
---[[
-TODO
-
-Snippets
-source ~/.vim_my_settings/.visual-mode-remaps
-source ~/.vim_my_settings/.insert-mode-remaps
-
---]]
-
---[[ from old config; not currently used
-
-set.backspace = indent, eol, start -- backspace is weird apparently?
-Fuzzy finder...
-set.rtp+= /usr/local/opt/fzf
-
---]]
-
 -- self explanatory settings
 set.tabstop = 2
 set.shiftwidth = 2
@@ -31,7 +13,7 @@ set.mouse = n
 set.textwidth = 80
 set.clipboard= "unnamedplus"
 set.ignorecase = true
-set.autochdir = true
+set.autochdir = false  -- if true, will change directory to the file being edited
 
 -- non self-explanatory settings
 set.re = 0              -- something for a syntax plugin

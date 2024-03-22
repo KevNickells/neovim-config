@@ -27,6 +27,7 @@ require("lazy").setup({
   { "whiteinge/diffconflicts" },
   { "joeveiga/ng.nvim" },
   { "sbdchd/neoformat" },
+  { "github/copilot.vim" },
   -- { "ludovicchabant/vim-gutentags" },
   -- { "jsfaint/gen_tags.vim" },
   -- { "mfulz/cscope.nvim" },
