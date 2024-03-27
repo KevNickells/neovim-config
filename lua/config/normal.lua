@@ -1,8 +1,8 @@
 vim.cmd 'nnoremap <Tab><Tab> :Lexplore<cr>'                 -- Basic file explorer because I don't need fancy
 vim.cmd 'nnoremap ff :FzfLua files<cr>'                     -- fuzzy file search
-
 -- vim.cmd 'nnoremap <C-]> :vnew %<CR>g<C-]>1<CR><CR>'      -- open tag definition in new tab - may need work
 
+vim.cmd 'nnoremap iii :CocCommand editor.action.organizeImport<cr>' -- organize imports
 vim.cmd 'nnoremap fff :FzfLua buffers<cr>'                  -- fuzzy file search open buffers
 vim.cmd 'nnoremap fw :FzfLua grep<cr>'                      -- grep word in project
 vim.cmd 'nnoremap fb :FzfLua blines<cr>'                    -- search for word in buffers

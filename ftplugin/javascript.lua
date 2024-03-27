@@ -37,10 +37,6 @@ vim.cmd 'inoremap obp Object.getOwnPropertyNames()<esc>i'
 vim.cmd 'nnoremap tst :term npm test<cr>'
 vim.cmd 'nnoremap tu :term npm test -- -u<cr>'
 
--- import
-vim.cmd "nnoremap iii iimport<space>{ }<space>from ''<esc>9h"
-vim.cmd "inoremap ii import<space>{ }<space>from '';<esc>9h"
-
 -- const
 vim.cmd 'nnoremap cc iconst<space>'
 vim.cmd 'inoremap cc const<space>'
