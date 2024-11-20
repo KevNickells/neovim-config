@@ -84,8 +84,21 @@ vim.api.nvim_create_user_command(
   {}
 )
 
+vim.api.nvim_create_user_command(
+  'RunTests',
+  [[
+    exec '15 split'
+    exec ':term npm test'
+  ]],
+  {}
+)
+
+
+-- test shortcut
+vim.cmd 'nnoremap th :exec RunTests()<cr>'
+
 -- shortcut for test current file
-vim.cmd 'nnoremap th :exec TestCurrentFile()<cr>'
+-- vim.cmd 'nnoremap th :exec TestCurrentFile()<cr>'
 -- end copy and paste from js file
 
 vim.cmd 'nnoremap <leader>c :r<space>~/Snippets/classTypescript.ts<cr>'

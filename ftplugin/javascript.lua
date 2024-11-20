@@ -9,6 +9,7 @@ vim.cmd 'nnoremap <leader>t :r<space>~/.config/nvim/ftplugin/snippets/testJavasc
 vim.cmd 'nnoremap <leader>tt :r<space>~/.config/nvim/ftplugin/snippets/shortTestJavascript.js<cr>'
 vim.cmd 'nnoremap <leader>re :r<space>~/.config/nvim/ftplugin/snippets/reducerJavaScript.js<cr>'
 
+
 -- comment line
 -- vim.cmd 'inoremap <leader>cc I//<esc>'
 
@@ -66,6 +67,20 @@ vim.api.nvim_create_user_command(
   {}
 )
 
+-- function to open node in-terminal, in-window
+vim.api.nvim_create_user_command(
+  'RunTests',
+  [[
+    exec '15 split'
+    exec ':term npm test'
+  ]],
+  {}
+)
+
+
+-- test shortcut
+vim.cmd 'nnoremap th :exec RunTests()<cr>'
+
 -- shortcut for node terminal
 vim.cmd 'nnoremap zs :NodeTerminal<cr>'
 
@@ -80,5 +95,3 @@ vim.api.nvim_create_user_command(
   {}
 )
 
--- shortcut for test current file
-vim.cmd 'nnoremap th :exec TestCurrentFile()<cr>'
