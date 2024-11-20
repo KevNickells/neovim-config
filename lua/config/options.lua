@@ -23,3 +23,4 @@ set.hidden = true       -- keeps buffers in the background
 set.timeout = true
 set.timeoutlen = 300
 set.ttimeoutlen = 0     -- these three establish how long to wait between keypresses
+
